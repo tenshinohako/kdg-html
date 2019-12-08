@@ -83,4 +83,4 @@ def workup_air():
 if __name__ == '__main__':
     app.debug = True
     # app.run(host='0.0.0.0', ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'), threaded=True, debug=True)
-    app.run(host='0.0.0.0', ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'))
+    app.run(host='0.0.0.0', port=5001, ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'))
