@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    /* height: 100vh;
+    widows: 100vw; */
+    background-color: #EBE7CC;
+}
+
+.wrapper{
+    min-height: 100vh;
+    position: relative;/*←相対位置*/
+    padding-bottom: 120px;/*←footerの高さ*/
+    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+/* ジグザグ */
+.zigzag {
+  position: relative;
+  /* width: 360px; */
+  /* height: 180px; */
+  background: #A4A4A4;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+}
+.zigzag::before, .zigzag::after {
+  height: 30px;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+.zigzag::before {
+  top: -30px;
+  background: linear-gradient(45deg, #A4A4A4 20px, transparent 0), linear-gradient(315deg, #A4A4A4 20px, transparent 0);
+  background-size: 40px 40px;
+}
+.zigzag::after {
+  bottom: -20px;
+  background: linear-gradient(135deg, #A4A4A4 20px, transparent 0), linear-gradient(225deg, #A4A4A4 20px, transparent 0);
+  background-size: 40px 40px;
+}
+
+
+/* ジグザグbottom */
+.zigzag_bottom {
+    position: relative;
+    /* width: 360px; */
+    /* height: 180px; */
+    /* margin-top: 750px; */
+    background: #A4A4A4;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.8));
+  }
+  .zigzag_bottom::before, .zigzag::after {
+    height: 30px;
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .zigzag_bottom::before {
+    top: -20px;
+    background: linear-gradient(45deg, #A4A4A4 20px, transparent 0), linear-gradient(315deg, #A4A4A4 20px, transparent 0);
+    background-size: 40px 40px;
+  }
+  .zigzag_bottom::after {
+    bottom: -30px;
+    background: linear-gradient(135deg, #A4A4A4 20px, transparent 0), linear-gradient(225deg, #A4A4A4 20px, transparent 0);
+    background-size: 40px 40px;
+  }
+
+
+
+.logo{
+    height: 150px;
+}
+
+.title{
+    /* 可愛いフォントにする */
+    /* height: 200px; */
+    /* width: 300; */
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #84460C;
+    margin-bottom: 50px;
+}
+
+.select_machines{
+    height: 180px;
+    width: 500px;
+    border: 10px solid #84460C;
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+
+    /* 要素の形づけ */
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    text-align: center;
+    margin:  0 auto;
+    margin-bottom: 30px;
+    background-color: #C12E34;
+}
+
+.select_machines a{
+    line-height: 180px;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #EBE7CC;
+}
+
+#teamb_logo{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.footer_logo{
+    color: #84460C;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+}
+
+.fotter{
+    /* height: 100px; */
+    width: 100%;
+    position: absolute;
+    /*←絶対位置*/
+    bottom: 0; /*下に固定*/
+    background-color: pink;
+}

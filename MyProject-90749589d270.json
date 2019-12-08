@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "astral-hold-232405",
+  "private_key_id": "90749589d27065a5b51f446c9b4422e3c904117c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCdFBiKgb8JNV3U\nVvAifu2ynLty5ChJg7qKU9nLNG4ohBT5HNtAjhNimspisXfiPR8/RCQm8TrdvhKI\n8vT56GemmKm5aRj14CNccMPEUTxSiP+gbkeWnfloen+23vRYIfI5PIhwEU7uV8BL\nESRlCHGH7WbZnZ8Ao81/aYBY5JB8PzUGwZtC/J9ItGofpwDMAATymp55GojYy6cC\nsgAUZL8EM41d02/JlIw+KBjzF2yQRJhdRpul/Xb6r4vfxQ/sVwnqeh0iuPLTxA1d\n/rPrX2CwGDxFJ6vmUgPGsKAhx8dgSHXCfpFE0dEyuZWqWhTQCYKwEoPx7h/yW7jJ\n8X9vdiwdAgMBAAECggEAAImlZ9v31m/l/qhphq9eiuz5wJ6X+2BwZAbTc7Gd6upA\n1CAi0/691umRZchru6Iv7Yct2dWbjk9slXwXaz+TaJY/MSZInUGDfXkurQkGJtYs\njH+0I7IuEgsmosPynCv0Pfk/Z6V3hV4Bh4BAhU6ubM5a5XB3rzM1rIj6P9OlzExo\nYfcft83EI0tUVjGp+r/6OBRQl/LR8C+7s6mfZ+4ydD9vizEQEIA9ihGPQPDpq8NE\nPpv7a55udjmfdFU/ySh7Zd0BLcJ0u8OXc3yTaHdMiD6pYm0kWEfwMflcgKkWbH/e\nxocvUUC4onJUO1mJ2R4xWKL9j5r0rKBkz0953WhqVQKBgQDRKBppYkzKF4ID5eC+\no0d0Md9LpgwXd0W+sAWPFuAl1JK/srAJluALHAT5QWvj9TxIkNiqSB25cR9nJu7S\nc0zyiT4CiAuNXO2smzJ/oyYWHFtx+F63ESNMGnGfftFczIEsiPP3e9joQNAkkpZv\ntGOeBRJqm8XotWGyhEVCShnwMwKBgQDAQh3bO21U7ttU5C/Oz2Ecq5Tlu8LgEOAv\nw6iPK54GnCn6+rUs4JL8BqLyPLOVh1Lb7B+Mo6dZ4zzS/UOn5YY5OHRaZdcOfCwZ\nihbhT2ezUtm+BvQzfoMAC9lGmk0MVQ8+4VZIpMqhnwd6lrHr3x607xXvkzClRCBT\ncpzSxS7ibwKBgCwSCCamaMm4VFPf7xAcNWUdURCOh0O2hQKd8j3pMwell9o+m2sZ\n2FFe8QlYKJSayr37jzuqAGFfnZ9Ni8raMp90HZXI9q4to4LYHLbaOJ82EGqeS87F\nFKvncoOJ5DFqgdlRbh56gQTHC1R5cqtM1iSoqu29ruDOvywvRKyoEnkTAoGAHdTk\nfxT8hPY/EDAL/wIMpn81LmRw+4WC08Z/TB/PeGUY2nm2TQ1XoUWCWSX0E5qYz8kW\nqCLon7jzwiVMLywdJJnO7AvrT7MSwK+9lx5UD+4mHSdFEwxpVUOBZkQg+m3kXLRo\nSANR8bwUVAA4AUpwoFCMzcy/+pTUkz4weT/hY38CgYEArb8Vg4o923m1RiXiS4kL\nyofU97NEi3gkdGdHVgKVXMJ9K87cH7UjsPCx3KDVxu7zvh7LkIP1sComk5KRxwNF\nyUEglLeFRb87g3oE+pst7YoXFJq8sktVkvpvF5cgSFIpVUiy2pLi2IthLgm728zW\nzvPvbprZWCyNoazTKYGMYFI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "speech-battle@astral-hold-232405.iam.gserviceaccount.com",
+  "client_id": "114036445105806701752",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/speech-battle%40astral-hold-232405.iam.gserviceaccount.com"
+}
