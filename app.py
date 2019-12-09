@@ -7,7 +7,7 @@ from base64 import b64encode
 from sys import argv
 import json
 import requests
-#import voice_recognition as voice_recognition
+import voice_recognition as voice_recognition
 from mutagen.mp3 import MP3 as mp3
 import pygame
 import time
@@ -47,6 +47,39 @@ def light_on():
 def tv_on():
      return render_template('tv_on.html')
 
+@app.route('/result_air', methods=['GET', 'POST'])
+def on_air():
+    headers = {
+    'authorization': 'Bearer ASjSnenmPqNqiDhj1pUJwPwyNeptsgG4-dePSvEBHfoVhu-I0Ek1G1IADCp1OKg-1dM7rT76RdnLyqOEdcyYCnJeTco69L0TZaVGPuFVg3Ys',
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    }
+    data = '["aircon_on"]'
+    response = requests.post('https://api-google.gh.auhome.au.com/smarthome/execute/commands', headers=headers, data=data)
+    return render_template('result.html')
+
+@app.route('/result_tv', methods=['GET', 'POST'])
+def on_tv():
+    headers = {
+    'authorization': 'Bearer ASjSnenmPqNqiDhj1pUJwPwyNeptsgG4-dePSvEBHfoVhu-I0Ek1G1IADCp1OKg-1dM7rT76RdnLyqOEdcyYCnJeTco69L0TZaVGPuFVg3Ys',
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    }
+    data = '["power"]'
+    response = requests.post('https://api-google.gh.auhome.au.com/smarthome/execute/commands', headers=headers, data=data)
+    return render_template('result.html')
+
+@app.route('/result_light', methods=['GET', 'POST'])
+def on_light():
+    headers = {
+    'authorization': 'Bearer ASjSnenmPqNqiDhj1pUJwPwyNeptsgG4-dePSvEBHfoVhu-I0Ek1G1IADCp1OKg-1dM7rT76RdnLyqOEdcyYCnJeTco69L0TZaVGPuFVg3Ys',
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    }
+    data = '["on"]'
+    response = requests.post('https://api-google.gh.auhome.au.com/smarthome/execute/commands', headers=headers, data=data)
+    return render_template('result.html')
+
 @app.route('/voice', methods=['GET', 'POST'])
 def voice():
     filename = 'Thank you.mp3' #再生したいmp3ファイル
@@ -71,16 +104,16 @@ def send():
 
 @app.route('/answer_for_air', methods=['GET', 'POST'])
 def workup_air():
-    # headers = {
-    # 'authorization': 'Bearer ASjSnenmPqNqiDhj1pUJwPwyNeptsgG4-dePSvEBHfoVhu-I0Ek1G1IADCp1OKg-1dM7rT76RdnLyqOEdcyYCnJeTco69L0TZaVGPuFVg3Ys',
-    # 'Content-Type': 'application/json',
-    # 'Accept': 'application/json',
-    # }
-    # data = '["on"]'
-    # response = requests.post('https://api-google.gh.auhome.au.com/smarthome/execute/commands', headers=headers, data=data)
+    headers = {
+    'authorization': 'Bearer ASjSnenmPqNqiDhj1pUJwPwyNeptsgG4-dePSvEBHfoVhu-I0Ek1G1IADCp1OKg-1dM7rT76RdnLyqOEdcyYCnJeTco69L0TZaVGPuFVg3Ys',
+    'Content-Type': 'application/json',
+    'Accept': 'application/json',
+    }
+    data = '["on"]'
+    response = requests.post('https://api-google.gh.auhome.au.com/smarthome/execute/commands', headers=headers, data=data)
     return render_template('result.html')
 
 if __name__ == '__main__':
     app.debug = True
     # app.run(host='0.0.0.0', ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'), threaded=True, debug=True)
-    app.run(host='0.0.0.0', port=5001, ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'))
+    app.run(host='0.0.0.0', ssl_context=('open_ssl/server.crt', 'open_ssl/server.key'))

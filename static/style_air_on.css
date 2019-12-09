@@ -82,6 +82,19 @@ body{
     color: #84460C;
     /* margin: 50px; */
 }
+
+.title_2{
+    font-size: 40px;
+    font-weight: bold;
+    color: #84460C;
+}
+.question_2{
+	color: #84460C;
+	font-size:20px;
+    font-weight: bold;
+}
+
+
 .question{
 	color: #84460C;
 	font-size:41px;
@@ -155,3 +168,4 @@ body{
     bottom: 0; /*下に固定*/
     background-color: pink;
 }
+
