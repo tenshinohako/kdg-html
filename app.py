@@ -7,7 +7,7 @@ from base64 import b64encode
 from sys import argv
 import json
 import requests
-import voice_recognition as voice_recognition
+#import voice_recognition as voice_recognition
 from mutagen.mp3 import MP3 as mp3
 import pygame
 import time
